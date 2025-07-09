@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gajalakshmi K | Embedded Systems Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f2f6fc;
+      color: #1a1a1a;
+      line-height: 1.6;
+      transition: background 0.5s ease, color 0.5s ease;
+      position: relative;
+      overflow-x: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: #f2f6fc;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #0ff; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+    }
+    .typewriter-loop {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #ffffff;
+      border-right: 2px solid white;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+      animation: fadeIn 1s ease-in-out both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      color: #0b2545;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      animation: glowHeader 2s ease-in-out infinite alternate;
+    }
+    @keyframes glowHeader {
+      from { text-shadow: 0 0 5px #0b2545; }
+      to { text-shadow: 0 0 15px #0b2545; }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 1s ease forwards;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+      animation: fadeIn 1s ease-in-out both;
+    }
+    a {
+      color: #0b2545;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      background: #0b2545;
+      color: white;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Gajalakshmi K</h1>
+    <h2 id="typewriter" class="typewriter-loop"></h2>
+  </header>
+
+  <section id="about">
+    <h2>Objective</h2>
+    <p>To design and develop intelligent embedded and IoT-based systems (Action) by applying core principles of Electrical and Electronics Engineering, sensor interfacing, and cloud connectivity (Task), aiming to optimize automation, enhance sustainability, and contribute to next-gen innovations in multinational technology environments (Purpose).</p>
+<div></div>
+
+    <p><strong>Location:</strong> Erode, Tamil Nadu - 638 005<br>
+    <strong>Phone:</strong> 6369623972<br>
+    <strong>Email:</strong> <a href="mailto:gajalakshmikumar42@gmail.com">gajalakshmikumar42@gmail.com</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gajalakshmi-k-a4b801257" target="_blank">View Profile</a></p>
+  </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="card"><i class="fas fa-microchip"></i> Simulation: MATLAB, Proteus, Multisim, MiPower, Keil</div>
+      <div class="card"><i class="fas fa-code"></i> Programming: C, Embedded C, Java, Arduino IDE</div>
+      <div class="card"><i class="fas fa-cogs"></i> Standards: IEEE, Compliance & Modeling</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><strong>Smart Exhaust Fan</strong><br>ESP32-based IoT fan with remote control and real-time monitoring.</div>
+      <div class="card"><strong>Temp-Controlled Fan</strong><br>ESP32 adjusts fan speed using real-time temperature.</div>
+      <div class="card"><strong>Smart Energy Meter</strong><br>Real-time electricity tracking, billing, remote control.</div>
+      <div class="card"><strong>Energy Harvesting</strong><br>Piezo + Thermo transducers + adaptive monitoring.</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Internship</h2>
+    <div class="card">Intern at <strong>WearableMEMS Pvt. Ltd</strong> (16-30 July 2024) – Learned about wearable medical systems and patient vital monitoring devices.</div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>NPTEL – Organizational Behaviour (Elite + Silver) – 75%</li>
+      <li>Arduino IDE & Proteus – San Technovation (15 days)</li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Co-Curricular Activities</h2>
+    <ul>
+      <li>IoT Ventilation System – Project Expo @ Mahendra Engineering College</li>
+      <li>Automotive Wiring Workshop – San Technovation</li>
+      <li>TNWISE Hackathon Participant – Energy Harvesting @ Kumaraguru College</li>
+    </ul>
+  </section>
+
+  <section id="interest">
+    <h2>Areas of Interest</h2>
+    <div class="grid">
+      <div class="card">Electrical Machines</div>
+      <div class="card">Embedded Systems</div>
+      <div class="card">Power Electronics</div>
+      <div class="card">Internet of Things</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gajalakshmi K. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    // Custom particle configuration with calm blue palette, circles & stars, moderate speed
+    particlesJS('particles-js',
+      {
+        "particles": {
+          "number": {
+            "value": 70,
+            "density": {
+              "enable": true,
+              "value_area": 900
+            }
+          },
+          "color": {
+            "value": ["#0b2545", "#1f4287", "#3a86ff", "#56ccf2"]
+          },
+          "shape": {
+            "type": ["circle", "star"],
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            }
+          },
+          "opacity": {
+            "value": 0.6,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 1,
+              "opacity_min": 0.2,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 4,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 4,
+              "size_min": 1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 130,
+            "color": "#3a86ff",
+            "opacity": 0.3,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "bounce",
+            "bounce": true,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 150,
+              "line_linked": {
+                "opacity": 0.4
+              }
+            },
+            "bubble": {
+              "distance": 200,
+              "size": 8,
+              "duration": 2,
+              "opacity": 0.8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 100,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      }
+    );
+
+    // Typewriter effect
+    const typewriter = document.getElementById("typewriter");
+    const words = ["Embedded Systems Engineer", "IoT Developer", "Smart Energy Innovator"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      const display = isDeleting ? currentWord.substring(0, charIndex--) : currentWord.substring(0, charIndex++);
+      typewriter.textContent = display;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(type, isDeleting ? 60 : 100);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", type);
+
+    // ScrollReveal animations
+    ScrollReveal().reveal('section', {
+      delay: 300,
+      distance: '50px',
+      origin: 'bottom',
+      duration: 1000,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>
